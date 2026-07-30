@@ -1,7 +1,30 @@
 aid: kinro
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kinro.png
 name: Kinro
-description: Kinro is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Kinro is an AI-powered commercial insurance brokerage for small businesses,
+  founded in the Y Combinator Spring 2026 batch and based in San Francisco.
+  Its autonomous AI agents run the full broker workflow around the clock, from
+  prospect identification and quote preparation through comparison, binding, and
+  ongoing certificate and renewal servicing. Kinro targets the roughly 77% of the
+  36 million U.S. small businesses that are underinsured because traditional
+  brokers cannot profitably serve low-premium accounts. It is licensed across 30
+  states, appointed by 15+ carriers with access to 50+ markets, and offers
+  general liability, business owner's policies, workers' compensation, commercial
+  auto and trucking, professional liability, cyber, and more. Kinro was surfaced
+  as a Y Combinator portfolio company and enriched in the API Evangelist network;
+  it currently publishes no public developer API surface.
 url: https://raw.githubusercontent.com/api-evangelist/kinro/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +34,34 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Insurance
+- InsurTech
+- Artificial Intelligence
+- Small Business
+- Commercial Insurance
+- Brokerage
+- Automation
+- Y Combinator
 apis: []
+common:
+- type: DomainSecurity
+  url: security/kinro-domain-security.yml
+- type: Website
+  url: https://www.kinro.com/
+- type: Blog
+  url: https://www.kinro.com/blog
+- type: PrivacyPolicy
+  url: https://www.kinro.com/privacy-policy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
